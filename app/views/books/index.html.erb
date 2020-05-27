@@ -26,6 +26,7 @@
 <%= form_for(@book) do |f| %>
 
 <% if @book.errors.any? %>
+	<p>error</p>
     <ul>
       <% @book.errors.full_messages.each do |message| %>
         <li><%= message %></li>
